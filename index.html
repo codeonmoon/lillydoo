@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="_lillydoo.css" />
+    <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32">
+    <title>LILLYDOO test package | Test Diapers and wet wipes for free</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center" role="navigation">
+            <a class="navbar-brand" href="#" style="font-size: xx-large;">LILLYDOO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto list-inline mx-auto justify-content-center">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">GRATIS TESTPACKET <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FLEXIBLES WINDEL-ABO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">PRODUKTE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">MAGAZIN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ÜBER LILLYDOO</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="contentHeader text-center testPacket">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-7">
+                </div>
+                <div class="col-6 col-md-5" style="padding-top: 10rem;">
+                    <div class="info-rectangle">
+                        <h1 class="text-center contentHeader-headline">
+                            <font style="vertical-align:inherit">
+                                <font style="vertical-align:inherit">
+                                    Your free trial package
+                                </font>
+                            </font>
+                        </h1>
+                        <a href="#trialbox" class="button">
+                            <font style="vertical-align:inherit">
+                                <font style="vertical-align:inherit">
+                                    Choose your size
+                                </font>
+                            </font>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="trialbox">
+        <div class="container-fluid" id="app">
+            <div class="row">
+                <div class="col-12 col-md-7">
+                    <img class="img-fluid" v-bind:src="image">
+                </div>
+                <div class="col-6 col-md-5">
+                    <h2>
+                        <font style="vertical-align:inherit">
+                            <font style="vertical-align:inherit">
+                                Discover our skin friendliness
+                            </font>
+                        </font>
+                    </h2>
+                    <div class="tb-button-container">
+                        <p class="margin-bottom-10 uppercase">
+                            <font style="vertical-align:inherit">
+                                <font style="vertical-align:inherit">
+                                    Choose your size
+                                </font>
+                            </font>
+                        </p>
+                        <ul v-for="variant in variants" :key=variant.variantId>
+                            <li>
+                                <p @mouseover="updateImage(variant.variantImage)">
+                                    <font style="vertical-align:inherit">
+                                        <font style="vertical-align:inherit">
+                                            {{ variant.variantId}}<br>
+                                            {{ variant.variantSize}}
+                                        </font>
+                                    </font>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
